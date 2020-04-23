@@ -21,6 +21,7 @@ const userAgent = `Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/5
 let thread = 5
 let outputFile = false
 let directory = null
+let interval = null
 
 if (commander.url_token){
     url_token = commander.url_token
@@ -31,6 +32,9 @@ if (commander.directory){
 if (commander.threads){
     thread = Number(commander.threads)
 }
+if (commander.interval){
+    interval = Number(commander.interval)
+}
 if (commander.outputFile){
     outputFile = true
 }
@@ -40,6 +44,7 @@ console.table({
     uid: url_token,
     'output directory': directory,
     thread,
+    interval,
     'output files': outputFile
 })
 
@@ -145,7 +150,7 @@ async function getUserZhihuPictures(){
                 }
 
                 console.log(`Analyze page: ${ page }/${ Math.ceil(result.paging.totals / limit) } picture total: ${ url.length }`)
-                await delay(1000)
+                await delay(interval)
                 offset += limit
                 page += 1
             }else {
