@@ -1,0 +1,27 @@
+{
+  "name": "zhihupicturedownload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "zhihu.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MunMunMiao/ZhihuPictureDownload.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MunMunMiao/ZhihuPictureDownload/issues"
+  },
+  "homepage": "https://github.com/MunMunMiao/ZhihuPictureDownload#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "commander": "^4.1.1",
+    "fast-html-parser": "^1.0.1",
+    "htmlparser2": "^4.1.0",
+    "progress": "^2.0.3",
+    "rxjs": "^6.5.4"
+  }
+}
