@@ -184,7 +184,7 @@ function parser(str){
             if (item.name === 'img'){
                 const u = item.attribs['data-original'] || item.attribs['data-actualsrc'] || item.attribs['src']
                 if (u){
-                    url.add(u.replace(/_r|_hd|\/80|\/50|_720w|_b|_xll|_xl+/g, ''))
+                    url.add(u.replace(/_r|_hd|\/80|\/50|_720w|_1440w|_b|_xll|_xl+/g, ''))
                 }
             }
 
