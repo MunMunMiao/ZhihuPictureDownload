@@ -1,3 +1,6 @@
+# move to [ZhihuPictureDownload-go](https://github.com/MunMunMiao/ZhihuPictureDownload-go)
+---
+
 # ZhihuPictureDownload
 
 ## How to use
